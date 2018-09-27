@@ -123,7 +123,7 @@ $(document).ready(function () {
 
 <h1 class="title toc-ignore">pml-final.R</h1>
 <h4 class="author"><em>M</em></h4>
-<h4 class="date"><em>Thu Sep 27 16:49:34 2018</em></h4>
+<h4 class="date"><em>Thu Sep 27 17:11:00 2018</em></h4>
 
 </div>
 
@@ -170,7 +170,7 @@ library(rattle)</code></pre>
 ## 
 ##     intersect, setdiff, setequal, union</code></pre>
 <pre class="r"><code>#loading data with NA=NA, &quot;&quot; and DIV0
-pml_training &lt;- read_csv(&quot;D:/consulenza/0-data science specialization/practical machine learning/progetto/pml-training.csv&quot;)</code></pre>
+pml_training &lt;- read_csv(&quot;pml-training.csv&quot;)</code></pre>
 <pre><code>## Warning: Missing column names filled in: 'X1' [1]</code></pre>
 <pre><code>## Parsed with column specification:
 ## cols(
@@ -201,10 +201,10 @@ pml_training &lt;- read_csv(&quot;D:/consulenza/0-data science specialization/pr
 <pre><code>## Warning in rbind(names(probs), probs_f): number of columns of result is not
 ## a multiple of vector length (arg 1)</code></pre>
 <pre><code>## Warning: 185 parsing failures.
-## row # A tibble: 5 x 5 col     row col         expected actual  file                                  expected   &lt;int&gt; &lt;chr&gt;       &lt;chr&gt;    &lt;chr&gt;   &lt;chr&gt;                                 actual 1  2231 kurtosis_r~ a double #DIV/0! 'D:/consulenza/0-data science specia~ file 2  2231 skewness_r~ a double #DIV/0! 'D:/consulenza/0-data science specia~ row 3  2255 kurtosis_r~ a double #DIV/0! 'D:/consulenza/0-data science specia~ col 4  2255 skewness_r~ a double #DIV/0! 'D:/consulenza/0-data science specia~ expected 5  2282 kurtosis_r~ a double #DIV/0! 'D:/consulenza/0-data science specia~
-## ... ................. ... .......................................................................... ........ .......................................................................... ...... .......................................................................... .... .......................................................................... ... .......................................................................... ... .......................................................................... ........ ..........................................................................
+## row # A tibble: 5 x 5 col     row col               expected actual  file               expected   &lt;int&gt; &lt;chr&gt;             &lt;chr&gt;    &lt;chr&gt;   &lt;chr&gt;              actual 1  2231 kurtosis_roll_arm a double #DIV/0! 'pml-training.csv' file 2  2231 skewness_roll_arm a double #DIV/0! 'pml-training.csv' row 3  2255 kurtosis_roll_arm a double #DIV/0! 'pml-training.csv' col 4  2255 skewness_roll_arm a double #DIV/0! 'pml-training.csv' expected 5  2282 kurtosis_roll_arm a double #DIV/0! 'pml-training.csv'
+## ... ................. ... ............................................................. ........ ............................................................. ...... ............................................................. .... ............................................................. ... ............................................................. ... ............................................................. ........ .............................................................
 ## See problems(...) for more details.</code></pre>
-<pre class="r"><code>pml_testing &lt;- read_csv(&quot;D:/consulenza/0-data science specialization/practical machine learning/progetto/pml-testing.csv&quot;)</code></pre>
+<pre class="r"><code>pml_testing &lt;- read_csv(&quot;pml-testing.csv&quot;)</code></pre>
 <pre><code>## Warning: Missing column names filled in: 'X1' [1]</code></pre>
 <pre><code>## Parsed with column specification:
 ## cols(
